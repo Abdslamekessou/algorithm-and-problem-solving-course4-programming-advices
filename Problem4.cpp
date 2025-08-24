@@ -30,7 +30,7 @@ bool isAccepted(stInfo Info){
 void printResult(stInfo Info){
 
     if(isAccepted(Info)){
-        cout <<"\n Accepted \n" <<endl ;
+        cout <<"\n Hired \n" <<endl ;
     }else{
       cout <<"\n Rejected \n" <<endl ;
     }
