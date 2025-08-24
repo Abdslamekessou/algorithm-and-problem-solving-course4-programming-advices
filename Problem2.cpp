@@ -16,10 +16,10 @@ void PrintName(string name){
   cout << "\nYour Name is: " << name <<endl;
 }
 
-using namespace std;
 
 int main()
 {
     PrintName(readName());
     return 0;
 }
+
