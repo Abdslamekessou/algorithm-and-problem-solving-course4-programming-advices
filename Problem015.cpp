@@ -11,7 +11,7 @@ void ReadNumbers(float& A , float& B){
    cout << "Please enter rectangle width  A : " <<endl;
    cin >>  A ;
 
-   cout << "Please enter rectangle length  B " <<endl;
+   cout << "Please enter rectangle length  B :  " <<endl;
    cin >> B;
 
 }
@@ -21,7 +21,7 @@ float CalculateRectangleArea(float A , float B){
 }
 
 void PrintResult(float Area){
-    cout << "Rectangle Area = " << Area <<endl;
+    cout << "\nRectangle Area = " << Area <<endl;
 }
 
 int main()
