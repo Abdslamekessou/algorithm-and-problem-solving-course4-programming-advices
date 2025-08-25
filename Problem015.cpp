@@ -8,10 +8,10 @@
 using namespace std;
 
 void ReadNumbers(float& A , float& B){
-   cout << "Please enter rectangle width  A : " <<endl;
+   cout << "Please enter rectangle width  (A) : " <<endl;
    cin >>  A ;
 
-   cout << "Please enter rectangle length  B : " <<endl;
+   cout << "Please enter rectangle length  (B) : " <<endl;
    cin >> B;
 
 }
