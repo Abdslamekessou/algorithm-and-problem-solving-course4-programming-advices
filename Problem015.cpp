@@ -8,10 +8,10 @@
 using namespace std;
 
 void ReadNumbers(float& A , float& B){
-   cout << "Enter A : " <<endl;
+   cout << "Please enter rectangle width  A : " <<endl;
    cin >>  A ;
 
-   cout << "Enter B : " <<endl;
+   cout << "Please enter rectangle length  B " <<endl;
    cin >> B;
 
 }
@@ -19,12 +19,15 @@ void ReadNumbers(float& A , float& B){
 float CalculateRectangleArea(float A , float B){
     return A * B;
 }
+
 void PrintResult(float Area){
     cout << "The Rectangle Area = " << Area <<endl;
 }
+
 int main()
 {   float A , B ;
     ReadNumbers(A,B);
     PrintResult(CalculateRectangleArea(A,B));
     return 0;
 }
+
