@@ -21,7 +21,7 @@ float CalculateRectangleArea(float A , float B){
 }
 
 void PrintResult(float Area){
-    cout << "The Rectangle Area = " << Area <<endl;
+    cout << "Rectangle Area = " << Area <<endl;
 }
 
 int main()
