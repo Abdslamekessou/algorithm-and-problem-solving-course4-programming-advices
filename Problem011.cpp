@@ -9,7 +9,7 @@ using namespace std;
 
 enum enPassFail {Pass = 1 , Fail};
 
-void ReadNumbers(int& Mark1 , int& Mark2 , int& Mark3){
+void ReadMarks(int& Mark1 , int& Mark2 , int& Mark3){
   cout << "Please Enter Mark 1 : " << endl;
   cin >> Mark1;
 
@@ -39,21 +39,18 @@ enPassFail CheckAverage(float Average){
 
 
 void PrintResults(float Average){
-  
-  cout <<"Your Average is : " << Average <<endl;
-  
+   cout <<"Your Average is : " << Average <<endl;
   if(CheckAverage(Average) == enPassFail::Pass){
     cout << "\n You Passed \n" <<endl;
   }else{
     cout << "\n You Failed \n" <<endl;
   }
-  
 }
 
 int main()
 {
     int Mark1 , Mark2 , Mark3;
-    ReadNumbers(Mark1 , Mark2 , Mark3);
+    ReadMarks(Mark1 , Mark2 , Mark3);
     PrintResults(CalculateAverage(Mark1 , Mark2 , Mark3));
 
     return 0;
