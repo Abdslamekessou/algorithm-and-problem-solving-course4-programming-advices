@@ -1,0 +1,30 @@
+#include <iostream>
+
+/*
+📝 Program should read the length and width of a rectangle.  
+📐 Calculate its area and display the result.
+*/
+
+using namespace std;
+
+void ReadNumbers(float& A , float& B){
+   cout << "Enter A : " <<endl;
+   cin >>  A ;
+
+   cout << "Enter B : " <<endl;
+   cin >> B;
+
+}
+
+float CalculateRectangleArea(float A , float B){
+    return A * B;
+}
+void PrintResult(float Area){
+    cout << "The Rectangle Area = " << Area <<endl;
+}
+int main()
+{   float A , B ;
+    ReadNumbers(A,B);
+    PrintResult(CalculateRectangleArea(A,B));
+    return 0;
+}
