@@ -39,11 +39,15 @@ enPassFail CheckAverage(float Average){
 
 
 void PrintResults(float Average){
+  
+  cout <<"Your Average is : " << Average <<endl;
+  
   if(CheckAverage(Average) == enPassFail::Pass){
     cout << "\n You Passed \n" <<endl;
   }else{
     cout << "\n You Failed \n" <<endl;
   }
+  
 }
 
 int main()
