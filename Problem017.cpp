@@ -9,7 +9,7 @@
 using namespace std;
 
 void ReadNumbers(float& A , float& H){
-   cout << "Please enter Triangle base  A : " <<endl;
+   cout << "Please enter Triangle Base  A : " <<endl;
    cin >>  A ;
 
    cout << "Please enter Triangle Height H : " <<endl;
@@ -22,7 +22,7 @@ float TriangleArea(float A , float H){
 }
 
 void PrintResult(float Area){
-    cout << "\nTriangle Area By Side And Height = " << Area <<endl;
+    cout << "\nTriangle Area = " << Area <<endl;
 }
 
 int main()
