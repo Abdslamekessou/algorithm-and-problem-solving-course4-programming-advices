@@ -1,7 +1,7 @@
 #include <iostream>
 
 /*
-📝 Program should read 3 numbers from the user.  
+📝 Program should read 3 marks from the user.
 ✅ Calculate their average and print "Pass" if average ≥ 50, otherwise print "Fail".
 */
 
@@ -9,23 +9,23 @@ using namespace std;
 
 enum enPassFail {Pass = 1 , Fail};
 
-void ReadNumbers(int& Num1 , int& Num2 , int& Num3){
-  cout << "Please Enter Number 1 : " << endl;
-  cin >> Num1;
+void ReadNumbers(int& Mark1 , int& Mark2 , int& Mark3){
+  cout << "Please Enter Mark 1 : " << endl;
+  cin >> Mark1;
 
-  cout << "Please Enter Number 2 : " << endl;
-  cin >> Num2;
+  cout << "Please Enter Mark 2 : " << endl;
+  cin >> Mark2;
 
-  cout << "Please Enter Number 3 : " << endl;
-  cin >> Num3;
+  cout << "Please Enter Mark 3 : " << endl;
+  cin >> Mark3;
 }
 
-int SumOf3Numbers(int Num1 , int Num2 , int Num3){
-  return Num1 + Num2 + Num3 ;
+int SumOf3Numbers(int Mark1 , int Mark2 , int Mark3){
+  return Mark1 + Mark2 + Mark3 ;
 }
 
-float CalculateAverage(int Num1 , int Num2 , int Num3){
-  return (float) SumOf3Numbers(Num1 , Num2 , Num3) / 3 ;
+float CalculateAverage(int Mark1 , int Mark2 , int Mark3){
+  return (float) SumOf3Numbers(Mark1 , Mark2 , Mark3) / 3 ;
 }
 
 enPassFail CheckAverage(float Average){
@@ -48,9 +48,10 @@ void PrintResults(float Average){
 
 int main()
 {
-    int Num1 , Num2 , Num3;
-    ReadNumbers(Num1 , Num2 , Num3);
-    PrintResults(CalculateAverage(Num1 , Num2 , Num3));
+    int Mark1 , Mark2 , Mark3;
+    ReadNumbers(Mark1 , Mark2 , Mark3);
+    PrintResults(CalculateAverage(Mark1 , Mark2 , Mark3));
 
     return 0;
 }
+
