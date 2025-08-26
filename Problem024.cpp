@@ -8,7 +8,7 @@ using namespace std;
 
 int ReadAge(){
   int Age;
-  cout << "Enter Your Age : " <<endl;
+  cout << "Please enter age between 18 and 45 : " <<endl;
   cin >> Age;
   return Age;
 }
