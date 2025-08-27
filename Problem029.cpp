@@ -1,0 +1,87 @@
+#include <iostream>
+
+// 📝 Problem: Read a number 🔢 and calculate the sum of all even numbers from 1 to N
+// using three different loops (while ⏳, do-while 🔄, and for 🔁).
+
+
+using namespace std;
+
+enum enOddOrEven {Odd = 1 , Even = 2};
+
+int ReadNumber(){
+   int number;
+   cout << "Please enter a number : \n";
+   cin >> number;
+   return number;
+}
+
+
+enOddOrEven CheckOddOrEven(int Number){
+
+    if(Number % 2 == 0){
+        return enOddOrEven::Even;
+    }else{
+       return enOddOrEven::Odd;
+    }
+
+}
+
+
+int SumEvenNumbersFrom1ToN_UsingWhile(int N){
+    cout << "\n**Sum Of Even Numbers Using While Loop**\n";
+    int Counter = 1;
+    int Sum = 0;
+
+    while(Counter <= N){
+       if(CheckOddOrEven(Counter) == enOddOrEven::Even){
+         Sum += Counter;
+       }
+       Counter++;
+    }
+
+    return Sum;
+}
+
+
+int SumEvenNumbersFrom1ToN_UsingDoWhile(int N){
+
+    cout << "\n**Sum Of Even Numbers Using Do..While Loop**\n";
+    int Counter = 1;
+    int Sum = 0 ;
+
+    do{
+       if(CheckOddOrEven(Counter) == enOddOrEven::Even){
+         Sum += Counter;
+       }
+       Counter++;
+    }while(Counter <= N);
+
+    return Sum;
+}
+
+
+int SumEvenNumbersFrom1ToN_UsingFor(int N){
+    cout << "\n**Sum Of Even Numbers Using For Loop**\n";
+
+    int Sum = 0;
+
+    for(int Counter = 1 ; Counter <= N ; Counter++){
+        if(CheckOddOrEven(Counter) == enOddOrEven::Even){
+         Sum += Counter;
+       }
+
+    }
+   return Sum;
+}
+
+
+int main()
+{
+    int N = ReadNumber();
+
+    cout << SumEvenNumbersFrom1ToN_UsingWhile(N) <<endl;
+    cout << SumEvenNumbersFrom1ToN_UsingDoWhile(N) <<endl;
+    cout << SumEvenNumbersFrom1ToN_UsingFor(N) << endl;
+
+    return 0;
+}
