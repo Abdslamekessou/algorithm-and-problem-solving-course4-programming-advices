@@ -1,8 +1,7 @@
 #include <iostream>
 
-// 📝 Problem: Read a number 🔢 and print the range from 1 to N using three different loops  
-// (while ⏳, do-while 🔄, and for 🔁).  
-
+// 📝 Problem: Read a number 🔢 and print the range from 1 to N using three different loops
+// (while ⏳, do-while 🔄, and for 🔁).
 
 using namespace std;
 
@@ -14,28 +13,28 @@ int ReadNumber(){
 }
 
 void PrintRangeFrom1ToN_UsingWhile(int N){
-    cout << "\n**Print Range Using While Loop**\n";
-    int i = 1;
-    while(i <= N){
-       cout << i <<endl;
-       i++;
+    cout << "\n**Range Printed Using While Loop**\n";
+    int Counter = 1;
+    while(Counter <= N){
+       cout << Counter <<endl;
+       Counter++;
     }
 }
 
 void PrintRangeFrom1ToN_UsingDoWhile(int N){
-    cout << "\n**Print Range Using Do While Loop**\n";
-    int i = 1;
+    cout << "\n**Range Printed Using Do..While Loop**\n";
+    int Counter = 1;
     do{
-       cout << i <<endl;
-       i++;
-    }while(i <= N);
+       cout << Counter <<endl;
+       Counter++;
+    }while(Counter <= N);
 }
 
 void PrintRangeFrom1ToN_UsingFor(int N){
-    cout << "\n**Print Range Using For Loop**\n";
-    int i = 1;
-    for(int i = 1 ; i<= N ; i++){
-        cout << i <<endl;
+    cout << "\n**Range Printed Using For Loop**\n";
+
+    for(int Counter = 1 ; Counter <= N ; Counter++){
+        cout << Counter <<endl;
     }
 }
 
