@@ -1,6 +1,6 @@
 #include <iostream>
 
-// 🛒 Program to read total bill and cash paid  
+// 🛒 Program to read total bill and cash paid
 // 💵 Then calculate the remainder (change or amount still owed)
 
 
@@ -9,8 +9,10 @@ using namespace std;
 float ReadPositiveNumber(string Message){
   float Number;
 
-  cout << Message << endl;
-  cin >> Number;
+  do{
+     cout << Message << endl;
+     cin >> Number;
+  }while(Number <= 0);
 
   return Number;
 }
@@ -37,3 +39,4 @@ int main()
 
     return 0;
 }
+
