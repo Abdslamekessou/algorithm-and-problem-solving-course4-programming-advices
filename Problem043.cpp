@@ -15,7 +15,7 @@ struct stTaskDuration{
 
 int ReadPositiveNumber(string Message){
 
-  int Number;
+  int Number = 0;
 
   do{
      cout << Message << endl;
