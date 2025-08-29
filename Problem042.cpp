@@ -1,6 +1,6 @@
 #include <iostream>
 
-// ⏳ Program to read a task duration in days, hours, minutes, and seconds  
+// ⏳ Program to read a task duration in days, hours, minutes, and seconds
 // 🔢 Then calculate the total duration in seconds
 
 
@@ -26,30 +26,29 @@ int ReadPositiveNumber(string Message){
 }
 
 
-
 stTaskDuration ReadTaskDuration(){
 
-    stTaskDuration strTaskDuration;
+    stTaskDuration TaskDuration;
 
-    strTaskDuration.NumberOfDays = ReadPositiveNumber("Please Enter Number Of Days : ");
-    strTaskDuration.NumberOfHours = ReadPositiveNumber("Please Enter Number Of Hours : ");
-    strTaskDuration.NumberOfMinutes = ReadPositiveNumber("Please Enter Number Of Minutes : ");
-    strTaskDuration.NumberOfSecondes = ReadPositiveNumber("Please Enter Number Of Secondes : ");
+    TaskDuration.NumberOfDays = ReadPositiveNumber("Please Enter Number Of Days : ");
+    TaskDuration.NumberOfHours = ReadPositiveNumber("Please Enter Number Of Hours : ");
+    TaskDuration.NumberOfMinutes = ReadPositiveNumber("Please Enter Number Of Minutes : ");
+    TaskDuration.NumberOfSecondes = ReadPositiveNumber("Please Enter Number Of Secondes : ");
 
-    return strTaskDuration;
+    return TaskDuration;
 
 }
 
 
 
-int TaskDurationInSecondes(stTaskDuration strTaskDuration){
+int TaskDurationInSecondes(stTaskDuration TaskDuration){
 
    int DurationInSecondes = 0;
 
-   DurationInSecondes = strTaskDuration.NumberOfDays * 24 * 60 * 60;
-   DurationInSecondes += strTaskDuration.NumberOfHours * 60 * 60;
-   DurationInSecondes += strTaskDuration.NumberOfMinutes * 60;
-   DurationInSecondes += strTaskDuration.NumberOfSecondes;
+   DurationInSecondes = TaskDuration.NumberOfDays * 24 * 60 * 60;
+   DurationInSecondes += TaskDuration.NumberOfHours * 60 * 60;
+   DurationInSecondes += TaskDuration.NumberOfMinutes * 60;
+   DurationInSecondes += TaskDuration.NumberOfSecondes;
 
    return DurationInSecondes;
 
